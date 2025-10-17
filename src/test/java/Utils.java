@@ -9,4 +9,9 @@ public class Utils {
         config.setProperty(key,value);
         config.save();
     }
+
+    public static int generateRandomNumber(int min, int max){
+        double randomNumber= Math.random()*(max-min)+min;
+        return (int)randomNumber;
+    }
 }
