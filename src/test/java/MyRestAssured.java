@@ -3,14 +3,13 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.apache.commons.configuration.ConfigurationException;
 import org.junit.jupiter.api.Test;
+import utils.Utils;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
 
 
 public class MyRestAssured {

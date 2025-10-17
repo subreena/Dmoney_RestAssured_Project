@@ -1,14 +1,16 @@
+package testrunner;
+import config.Setup;
 import com.github.javafaker.Faker;
+import config.UserModel;
+import controller.UserController;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import jdk.jshell.execution.Util;
 import org.apache.commons.configuration.ConfigurationException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.annotations.TestInstance;
+import utils.Utils;
 
 import java.io.IOException;
-import java.util.Set;
 
 public class UserTestRunner extends Setup {
     @Test(priority = 1, description = "admin login ")
